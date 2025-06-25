@@ -4,7 +4,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const user = document.getElementById("username").value;
   const pass = document.getElementById("password").value;
 
-  fetch("https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/data.json")
+  fetch("https://raw.githubusercontent.com/rezume3228/BAZA_DANNUH/main/data.json")
     .then(res => res.json())
     .then(data => {
       const found = data.users.find(u => u.username === user && u.password === pass);
